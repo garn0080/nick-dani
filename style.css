@@ -4,13 +4,32 @@ html, body {
     height: 100vh;
 }
 
-div {
+body {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 img {
-    margin: 40px;
-    width: 45%;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+}
+
+
+/* PHONE SIZE */
+
+
+@media (max-width: 800px) {
+
+    img {
+        width: 90%;
+    }
+
+
 }
